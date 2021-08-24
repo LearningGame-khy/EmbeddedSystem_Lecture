@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+>
+<TextView
+   android:id="@+id/textView1"
+   android:layout_width="100px"
+   android:layout_height="wrap_content"
+   android:text="배열요소 개수"
+/>
+<Spinner
+   android:id="@+id/spinner1"
+   android:layout_width="100px"
+   android:layout_height="50px"
+   android:entries="@array/array"
+   android:layout_toRightOf="@+id/textView1"
+/>
+<Button
+   android:id="@+id/createarray"
+   android:layout_width="100px"
+   android:layout_height="50px"
+   android:layout_toRightOf="@+id/spinner1"
+   android:text="배열 생성"
+/>
+<LinearLayout
+   android:id="@+id/linearLayout1"
+   android:orientation="vertical"
+   android:layout_height="wrap_content"
+   android:layout_width="fill_parent"
+   android:layout_below="@+id/createarray"
+>
+</LinearLayout>
+   <TextView
+      android:id="@+id/Answer"
+      android:layout_width="100px"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/linearLayout1"
+      android:visibility="gone"
+   />
+   <TextView
+      android:id="@+id/textView2"
+      android:layout_width="100px"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/Answer"
+      android:text="배열요소 합"
+      android:visibility="gone"
+   />
+    <EditText
+       android:id="@+id/editText1"
+       android:layout_width="100px"
+      android:layout_height="50px"
+      android:layout_toRightOf="@+id/textView2"
+      android:layout_alignTop="@+id/textView2"
+       android:visibility="gone"
+    />
+    <Button
+      android:id="@+id/sendValue"
+      android:layout_width="100px"
+      android:layout_height="50px"
+      android:layout_below="@+id/editText1"
+      android:text="확인"
+       android:visibility="gone"
+   />
+   <Button
+      android:id="@+id/clear"
+      android:layout_width="100px"
+      android:layout_height="50px"
+      android:layout_toRightOf="@+id/sendValue"
+      android:layout_alignTop="@+id/sendValue"
+      android:text="Clear"
+       android:visibility="gone"
+   />
+</RelativeLayout>
